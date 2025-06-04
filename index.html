@@ -1051,6 +1051,44 @@
     }
 }
 
+.btn-superior {
+  position: fixed; /* o absolute según el contexto */
+  top: 20px;
+  right: 20px;
+  z-index: 99999; /* muy alto para ir encima del canvas */
+  background: #4a6ed1;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 12px;
+  font-weight: bold;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.btn-superior {
+  margin-top: 20px;
+  background: #8bbcf9;
+  color: white;
+  border: none;
+  padding: 12px 26px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(74, 110, 209, 0.25);
+  transition: all 0.3s ease;
+  z-index: 99999; /* suficiente si el canvas tiene z-index menor */
+  position: relative; /* para asegurar stacking context sobre canvas */
+}
+
+.btn-superior:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(74, 110, 209, 0.4);
+}
+
+
+
 
 
 
@@ -1070,7 +1108,12 @@
   <br>
 
   <p class="sub-name">Apasionado por crear experiencias digitales modernas</p>
+
+  <a href="#sobre-mi">
+    <button class="btn-superior">Empezar</button>
+  </a>
 </div>
+
 
 <div class="color-picker-container">
   <label for="colorPicker" style="color: #8bbcf9;">color → </label>
