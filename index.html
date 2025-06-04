@@ -1087,7 +1087,20 @@
   box-shadow: 0 10px 24px rgba(74, 110, 209, 0.4);
 }
 
-
+@media (max-width: 768px) {
+  #draw-canvas {
+    display: none;
+    pointer-events: none;
+  }
+  
+  .color-picker-container {
+    display: none;
+  }
+  
+  .draw-instructions {
+    display: none;
+  }
+}
 
 
 
@@ -1108,10 +1121,6 @@
   <br>
 
   <p class="sub-name">Apasionado por crear experiencias digitales modernas</p>
-
-  <a href="#sobre-mi">
-    <button class="btn-superior">Empezar</button>
-  </a>
 </div>
 
 
