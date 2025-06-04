@@ -814,10 +814,8 @@
   <h2 class="contacto-title">¿Hablamos?</h2>
   <p class="contacto-subtitle">Cuéntame sobre tu proyecto y te diré si puedo ayudarte.</p>
   
-  <form action="https://formsubmit.co/jan@alumnes.ilerna.com" method="POST" class="contacto-form">
-    <!-- Evita captcha de confirmación -->
+  <form action="https://formsubmit.co/TU_CORREO@ejemplo.com" method="POST" class="contacto-form">
     <input type="hidden" name="_captcha" value="false">
-    <!-- Redirección después de enviar -->
     <input type="hidden" name="_next" value="https://tusitio.com/gracias.html">
 
     <div class="form-group">
@@ -827,7 +825,12 @@
 
     <div class="form-group">
       <label for="email">Correo electrónico</label>
-      <input type="email" name="email" id="email" required placeholder="Tu email">
+      <input type="email" name="email" id="email" placeholder="Tu email (opcional)">
+    </div>
+
+    <div class="form-group">
+      <label for="telefono">Número de teléfono</label>
+      <input type="tel" name="telefono" id="telefono" required placeholder="Ej. +34 600 123 456">
     </div>
 
     <div class="form-group">
@@ -854,6 +857,7 @@
     <button type="submit" class="btn-enviar">Enviar mensaje</button>
   </form>
 </section>
+
 
 
 </section>
