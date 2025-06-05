@@ -1071,3 +1071,9 @@
     display: none;
   }
 }
+
+
+::selection {
+  background-color: #cbe3f6; /* Color de fondo al seleccionar */
+  color: #333;            /* Color del texto seleccionado */
+}
